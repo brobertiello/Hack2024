@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Side panel extension test",
+  "version": "1.0",
+  "description": "Extension testing with a default side panel.",
+  "action": {
+    "default_title": "Click to open panel"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": ["sidePanel"]
+}

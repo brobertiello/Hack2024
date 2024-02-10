@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Sidepanel</title>
-  </head>
-  <body>
-    <h1>RateMyProfessor Extension</h1>
-    <p>Hacklahoma 2024</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>OU Professor Ratings Extension</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>OU Professor Ratings</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Rate My Professor Ratings</h2>
+                    <h3>Find Your Professor</h3>
+                </hgroup>
+                <p>Use the search below to find ratings for University of Oklahoma professors directly within the registration page.</p>
+                <form>
+                    <input type="text" id="professor-name" name="professor-name" placeholder="Enter Professor's Name" required>
+                    <button type="submit" onclick="event.preventDefault()">Search</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+</body>
 </html>

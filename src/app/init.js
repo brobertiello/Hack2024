@@ -4,6 +4,8 @@ function init() {
 
         nw.Screen.Init();
 
+        initMessages();
+
     }catch(error){
 
         alert('Error Initializing:' + error.message);

@@ -14,11 +14,19 @@ function promptInput() {
 
 function askAlfredo(msg) {
 
-    say(msg);
+    //say(msg);
+
+    addUserMessage(msg);
+
+    var messages = getMessages();
+
+    say(runPythonScript("/python/chat.py", messages));
 
 }
 
 function say(msg){
+
+    addBotMessage(msg);
 
     var sb = document.getElementById("alfredoSpeechBubble")
     

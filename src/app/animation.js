@@ -31,3 +31,9 @@ function aniDance() {
     setAnimation("dance.gif");
 
 }
+
+function aniSpin() {
+
+    setAnimation("spin.gif");
+
+}

@@ -81,3 +81,9 @@ function dance() {
   startMusic();
 
 }
+
+function spin() {
+
+  aniSpin();
+
+}

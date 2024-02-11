@@ -2,7 +2,7 @@
     position: absolute;
     background-color: #84abb5;
     color: white;
-    height: 150px;
+    height: (25*5)px;
     width: 100px;
     text-align: center;
 }
@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
 }
+
 .menuItems .items { padding: 5px; border-bottom: 1px solid #e6d4b6;}
 .menuItems .items:last-child {border: none;}
 .menuItems .items a {text-decoration: none; color: white;}

@@ -21,11 +21,16 @@
 
   "window": {
     "title": "Alfredo Demo",
-    "width": 600,
-    "height": 600,
+    "width": 250,
+    "height": 250,
     "position": "center",
+    "show": true,
     
-    
-    "transparent": true
+    "frame": false,
+    "transparent": true,
+    "toolbar": false,
+    "always_on_top": true,
+    "fullscreen": false,
+    "resizable": false
   }
 }

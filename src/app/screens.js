@@ -10,11 +10,13 @@ function getScreens() {
 
 }
 
-function getWorkArea() {
+function getSpace() {
 
     try{
 
-        var screenArea = getScreens()[0].work_area;
+        var space = getScreens()[0].bounds;
+
+        alert("Work Area: " + space.width + " " + space.height);
 
     }catch(error){
 
@@ -22,20 +24,28 @@ function getWorkArea() {
 
     }finally{
 
-        return screenArea;
+        return space;
     
     }
 
 }
 
-function getWorkingWidth() {
+function getWorkingWidth(){
+    return getSpaceWidth();
+}
 
-    return getWorkArea().width;
+function getWorkingHeight(){
+    return getSpaceHeight();
+}
+
+function getSpaceWidth() {
+
+    return getSpace().width;
 
 }
 
-function getWorkingHeight() {
+function getSpaceHeight() {
 
-    return getWorkArea().height
+    return getSpace().height;
 
 }

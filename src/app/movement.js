@@ -3,13 +3,12 @@ function moveToPercent(x, y) {
     try{
 
         var win = nw.Window.get();
-
-        var area = getWorkArea();
-        var maxW = area.width;
-        var maxH = area.height;
+        
+        var maxW = getSpaceWidth();
+        var maxH = getSpaceHeight();
 
         var xPos = x*(maxW-win.width);
-        var yPos = y*(maxH-win.width);
+        var yPos = y*(maxH-win.height);
 
         win.moveTo(Math.floor(xPos), Math.floor(yPos));
 

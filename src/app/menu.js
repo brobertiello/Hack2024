@@ -35,12 +35,30 @@ document.oncontextmenu = showCustomContextMenu;
 
 function mRandomPosition() {
 
+    moveToRandom();
+
 }
 
 function mCenterPosition() {
 
+    moveToPercent(0.5, 0.5);
+
 }
 
 function mExit() {
-    
+
+    window.close();
+
+}
+
+function mTopLeftPosition() {
+
+    moveToPercent(0, 0);
+
+}
+
+function mBottomRightPosition() {
+
+    moveToPercent(1, 1);
+
 }

@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/menu.css" />
+        <link rel="stylesheet" href="../styles/speech.css" />
 
         <title>Alfredo Main</title>
 
@@ -23,12 +24,19 @@
     <script src="../app/menu.js"></script>
     <script src="../app/movement.js"></script>
     <script src="../app/screens.js"></script>
+    <script src="../app/speech.js"></script>
 
     <body onload="init()">
 
         <!-- ALFREDO -->
 
-        <img id="alfredo" draggable="false" src="../assets/idle.gif" alt="Alfredo-Looking-Right" onclick=onClick()>
+        <img id="alfredo" draggable="false" src="../assets/idle.gif" alt="Alfredo-Looking-Right" onclick="say('Hello')">
+
+        <!-- CHAT BOX -->
+
+        <div id = "alfredoSpeechBubble" style = "display: none;">
+            <p id = "alfredoSpeech" >Hello! I am Alfredo.</p>
+        </div>
 
         <!-- CUSTOM MENU -->
 

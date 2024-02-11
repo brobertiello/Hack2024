@@ -2,6 +2,8 @@ function onClick() {
 
 }
 
+// WALKING
+
 function promptWalk() {
 
     //alert(getSpaceWidth() + ", " + getSpaceHeight());
@@ -69,3 +71,13 @@ function walk(newDestX, newDestY) {
     // Call the moveTo function with the current position
     moveTo(Math.round(currentX), Math.round(currentY));
   }
+
+// DANCING
+
+function dance() {
+
+  aniDance();
+
+  startMusic();
+
+}

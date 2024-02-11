@@ -2,6 +2,10 @@ function setAnimation(imagePath) {
 
     getAlfredoImage().src = "../assets/" + imagePath;
 
+    if(imagePath!=="dance.gif"){
+        stopMusic();
+    }
+
 }
 
 function aniIdle() {
@@ -19,5 +23,11 @@ function aniWalk() {
 function aniWalkLeft() {
 
     setAnimation("walkleft.gif");
+
+}
+
+function aniDance() {
+
+    setAnimation("dance.gif");
 
 }

@@ -23,10 +23,13 @@
     <script src="../app/input.js"></script>
     <script src="../app/menu.js"></script>
     <script src="../app/movement.js"></script>
+    <script src="../app/music.js"></script>
     <script src="../app/screens.js"></script>
     <script src="../app/speech.js"></script>
 
     <body onload="init()">
+
+        <audio id="danceAudio" src="../assets/dance.mp3" preload="auto"></audio>
 
         <!-- ALFREDO -->
 
@@ -45,6 +48,7 @@
                 <li class = "items"><a href = "#" onclick="moveToPercent(0.5, 0.5);;return false;"> CenterPosition </a></li>
                 <li class = "items"><a href = "#" onclick="aniIdle();return false;"> Idle </a></li>
                 <li class = "items"><a href = "#" onclick="promptWalk();return false;"> (x,y) walk </a></li>
+                <li class = "items"><a href = "#" onclick="dance();return false;"> Dance </a></li>
                 <li class = "items"><a href = "#" onclick="window.close();;return false;"> Exit </a></li>
             </ul>
         </div>

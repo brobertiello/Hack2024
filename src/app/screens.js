@@ -16,8 +16,6 @@ function getSpace() {
 
         var space = getScreens()[0].bounds;
 
-        alert("Work Area: " + space.width + " " + space.height);
-
     }catch(error){
 
         alert('Error getting screen size:' + error.message);

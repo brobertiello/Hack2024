@@ -1,3 +1,19 @@
+function getXCoordinate(xpct) {
+    return xpct*getSpaceWidth();
+}
+
+function getYCoordinate(ypct) {
+    return ypct*getSpaceHeight();
+}
+
+function moveTo(x, y){
+
+    var win = nw.Window.get();
+
+    win.moveTo(x, y);
+
+}
+
 function moveToPercent(x, y) {
 
     try{

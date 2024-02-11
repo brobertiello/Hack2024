@@ -12,13 +12,15 @@ function showCustomContextMenu(event) {
     var myContextMenu = document.getElementById('customContextMenu');
 
     if (myContextMenu.style.display == "block") {
+
        myContextMenu.style.display = "none";
+
     }
 
     else {
 
        myContextMenu.style.display = "block";
-       
+
        myContextMenu.style.left = event.pageX + "px";
        myContextMenu.style.top = event.pageY + "px";
 
@@ -28,3 +30,17 @@ function showCustomContextMenu(event) {
 
 document.onclick = hideCustomContextMenu;
 document.oncontextmenu = showCustomContextMenu;
+
+//MENU COMMANDS
+
+function mRandomPosition() {
+
+}
+
+function mCenterPosition() {
+
+}
+
+function mExit() {
+    
+}

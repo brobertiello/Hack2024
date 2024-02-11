@@ -14,7 +14,12 @@
 
     </head>
 
+    <script src="../app/behavior.js"></script>
+    <script src="../app/display.js"></script>
     <script src="../app/init.js"></script>
+    <script src="../app/menu.js"></script>
+    <script src="../app/movement.js"></script>
+    <script src="../app/screens.js"></script>
 
     <body onload="init()">
 
@@ -22,22 +27,15 @@
 
         <img id="alfredo" src="../assets/alfredo.png" alt="Alfredo" onclick=moveToRandom()>
 
-        <script src="../app/index.js"></script>
-
         <!-- CUSTOM MENU -->
 
         <div id = "customContextMenu" style = "display: none;">
             <ul class = "menuItems">
-                <li class = "items"><a href = "#"> Menu Item-1 </a></li>
-                <li class = "items"><a href = "#"> Menu Item-2 </a></li>
-                <li class = "items"><a href = "#"> Menu Item-3 </a></li>
-                <li class = "items"><a href = "#"> Menu Item-4 </a></li>
-                <li class = "items"><a href = "#"> Menu Item-5 </a></li>
-                <li class = "items"><a href = "#"> Menu Item-6</a></li>
+                <li class = "items"><a href = "#" onclick="mRandomPosition();return false;"> RandomPosition </a></li>
+                <li class = "items"><a href = "#" onclick="mCenterPosition();return false;"> CenterPosition </a></li>
+                <li class = "items"><a href = "#" onclick="mExit();return false;"> Exit </a></li>
             </ul>
         </div>
-
-        <script src="../app/menu.js"></script>
 
     </body>
 

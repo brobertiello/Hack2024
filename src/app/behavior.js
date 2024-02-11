@@ -1,6 +1,10 @@
 function onClick() {
 
-    alert(getSpaceWidth() + ", " + getSpaceHeight());
+}
+
+function promptWalk() {
+
+    //alert(getSpaceWidth() + ", " + getSpaceHeight());
 
     walk(getInput("Enter X"), getInput("Enter Y"));
 
@@ -16,6 +20,8 @@ let destY = 0;
 let duration = 2000;
 let startTime;
 
+let stepInterval;
+
 // Function to initiate the walk
 function walk(newDestX, newDestY) {
 
@@ -23,14 +29,20 @@ function walk(newDestX, newDestY) {
     startY = getDisplayY();
     destX = newDestX;
     destY = newDestY;
+
+    duration = 4*Math.sqrt(Math.pow(destX-startX, 2), Math.pow(destY-startY, 2));
   
     // Start the timer
     startTime = Date.now();
 
-    aniWalk();
+    if(destX>startX){
+        aniWalk();
+    }else{
+        aniWalkLeft();
+    }
   
     // Call the step function every 1/10th of a second
-    setInterval(step, 100);
+    stepInterval = setInterval(step, 100);
   }
   
   // Function to perform each step

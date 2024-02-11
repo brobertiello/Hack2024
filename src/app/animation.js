@@ -15,3 +15,9 @@ function aniWalk() {
     setAnimation("walk.gif");
 
 }
+
+function aniWalkLeft() {
+
+    setAnimation("walkleft.gif");
+
+}

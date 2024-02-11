@@ -11,10 +11,14 @@
     "width": 300,
     "height": 300,
     "position": "center",
+    "show": true,
     
     "frame": false,
     "transparent": true,
-    "toolbar": false
+    "toolbar": false,
+    "always_on_top": true,
+    "fullscreen": false,
+    "resizable": false
   },
   "keywords": [],
   "author": "",

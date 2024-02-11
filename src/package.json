@@ -1,0 +1,22 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "views/main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "Alfredo Demo",
+    "width": 300,
+    "height": 300,
+    "position": "center",
+    
+    "frame": false,
+    "transparent": true,
+    "toolbar": false
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

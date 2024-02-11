@@ -1,0 +1,31 @@
+{
+  "name": "nwtutorial",
+  "version": "1.0.0",
+  "description": "",
+
+  "author": "",
+  "license": "ISC",
+
+  "main": "../src/views/index.js",
+
+  "scripts": {
+    "dev": "nw src/",
+    "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/"
+  },
+  "keywords": [],
+
+  "devDependencies": {
+    "nw": "^0.84.0-sdk",
+    "nw-builder": "^4.6.0"
+  },
+
+  "window": {
+    "title": "Alfredo Demo",
+    "width": 600,
+    "height": 600,
+    "position": "center",
+    
+    
+    "transparent": true
+  }
+}

@@ -14,3 +14,22 @@
     border-radius: 15px;
     padding: 0px;
 }
+
+#userSpeechBubble {
+    position: absolute;
+    background-color: rgb(68, 219, 238);
+    color: black;
+    text-align: center;
+    width: auto; /* Set width to auto to make it adjust to content */
+    max-width: 150px; /* Optionally set max-width for the form */
+    height: 100px;
+    top: 75px;
+    left: 40px;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+#inputField {
+    width: auto;
+    height: auto;
+}

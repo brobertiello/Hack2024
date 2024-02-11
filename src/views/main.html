@@ -33,13 +33,36 @@
 
         <!-- ALFREDO -->
 
-        <img id="alfredo" draggable="false" src="../assets/idle.gif" alt="Alfredo-Looking-Right" onclick="say('Hello')">
+        <img id="alfredo" draggable="false" src="../assets/idle.gif" alt="Alfredo-Looking-Right" onclick="promptInput()">
 
         <!-- CHAT BOX -->
 
         <div id = "alfredoSpeechBubble" style = "display: none;">
             <p id = "alfredoSpeech" >Hello! I am Alfredo.</p>
         </div>
+
+        <form id="userSpeechBubble" style="display: none">
+            <input type="text" id="inputField" name="inputField" required>
+        </form>
+
+        <script>
+            document.getElementById("inputField").addEventListener("keyup", function (event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    document.getElementById("userSpeechBubble").submit();
+                }
+            });
+
+            document.getElementById("userSpeechBubble").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevents the default form submission behavior
+
+                document.getElementById("userSpeechBubble").style.display = "none";
+
+                var userInput = document.getElementById("inputField").value;
+
+                askAlfredo(userInput);
+            });
+        </script>
 
         <!-- CUSTOM MENU -->
 

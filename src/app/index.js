@@ -46,6 +46,8 @@ function getWorkArea() {
 
     try{
 
+        alert(nw.Screen.screens.length)
+
         var screenArea = nw.Screen.screens[0].work_area;
 
     }catch(error){

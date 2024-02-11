@@ -26,6 +26,8 @@ function say(msg){
 
     showMessage();
 
+    setTimeout(hideMessage, 4000);
+
 }
 
 function showMessage() {

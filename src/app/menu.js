@@ -30,35 +30,3 @@ function showCustomContextMenu(event) {
 
 document.onclick = hideCustomContextMenu;
 document.oncontextmenu = showCustomContextMenu;
-
-//MENU COMMANDS
-
-function mRandomPosition() {
-
-    moveToRandom();
-
-}
-
-function mCenterPosition() {
-
-    moveToPercent(0.5, 0.5);
-
-}
-
-function mExit() {
-
-    window.close();
-
-}
-
-function mTopLeftPosition() {
-
-    moveToPercent(0, 0);
-
-}
-
-function mBottomRightPosition() {
-
-    moveToPercent(1, 1);
-
-}

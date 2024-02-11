@@ -1,8 +1,14 @@
 function promptInput() {
 
-    var inp = document.getElementById("userSpeechBubble");
+    hideMessage();
 
-    inp.style.display = "block";
+    var speechForm = document.getElementById("userSpeechBubble");
+
+    speechForm.style.display = "block";
+
+    var inputForm = document.getElementById("inputField");
+
+    inputForm.value = "";
 
 }
 

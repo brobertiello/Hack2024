@@ -8,6 +8,7 @@
         <meta name="Alfredo main.html" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/menu.css" />
 
         <title>Alfredo Main</title>
 
@@ -17,9 +18,26 @@
 
     <body onload="init()">
 
+        <!-- ALFREDO -->
+
         <img id="alfredo" src="../assets/alfredo.png" alt="Alfredo" onclick=moveToRandom()>
 
         <script src="../app/index.js"></script>
+
+        <!-- CUSTOM MENU -->
+
+        <div id = "customContextMenu" style = "display: none;">
+            <ul class = "menuItems">
+                <li class = "items"><a href = "#"> Menu Item-1 </a></li>
+                <li class = "items"><a href = "#"> Menu Item-2 </a></li>
+                <li class = "items"><a href = "#"> Menu Item-3 </a></li>
+                <li class = "items"><a href = "#"> Menu Item-4 </a></li>
+                <li class = "items"><a href = "#"> Menu Item-5 </a></li>
+                <li class = "items"><a href = "#"> Menu Item-6</a></li>
+            </ul>
+        </div>
+
+        <script src="../app/menu.js"></script>
 
     </body>
 

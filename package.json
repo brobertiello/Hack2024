@@ -9,7 +9,7 @@
   "main": "../src/views/index.js",
 
   "scripts": {
-    "dev": "nw src/",
+    "dev": "nw src/ . --disable-gpu --force-cpu-draw",
     "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/"
   },
   "keywords": [],

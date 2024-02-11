@@ -4,3 +4,8 @@ img {
     display: block; /* Removes extra space below the image */
     margin: auto;   /* Centers the image horizontally */
 }
+
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}

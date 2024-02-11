@@ -1,41 +1,27 @@
-function getScreenObj() {
+function getDisplayX(){
 
-    return nw.Screen;
-
-}
-
-function getScreens() {
-
-    return getScreenObj().screens;
+    var win = nw.Window.get();
+    return win.x;
 
 }
 
-function getWorkArea() {
+function getDisplayY(){
 
-    try{
-
-        var screenArea = getScreens()[0].work_area;
-
-    }catch(error){
-
-        alert('Error getting screen size:' + error.message);
-
-    }finally{
-
-        return screenArea;
-    
-    }
+    var win = nw.Window.get();
+    return win.y;
 
 }
 
-function getWorkingWidth() {
+function getDisplayW() {
 
-    return getWorkArea().width;
+    var win = nw.Window.get();
+    return win.width;
 
 }
 
-function getWorkingHeight() {
+function getDisplayH() {
 
-    return getWorkArea().height
+    var win = nw.Window.get();
+    return win.height;
 
 }
